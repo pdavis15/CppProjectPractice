@@ -1,2 +1,2 @@
-# hello-world
-Learning to use hit hub- Making edits
+# C++ Project Outline
+Learning the structure of a good project.  Using googletest, conan, cmake
