@@ -3,6 +3,7 @@ build/
 
 # CMake Directory
 CMakeFiles/
+*.cmake
 
 # Vscode Files 
 .vscode/
