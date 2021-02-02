@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.0.0)
 
 # Show where to find the google test directory
 include_directories(../googletest-src/googletest/include)
+include_directories(../googletest-src/googlemock/include)
 
 set(This ExampleTests)
 set(Sources 
