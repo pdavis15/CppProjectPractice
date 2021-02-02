@@ -1,14 +1,24 @@
 #include "../src/Example.hpp"
+#include <string>
 
-class Soundex {
-
+class Soundex 
+{
+public:
+    std::string encode(const std::string& word) const {
+        return word;
+    }
 };
 
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
+using ::testing::Eq;
 
 TEST(SoundexEncoding, RetainsSoleLetterOfOneLetterWord) {
     Soundex soundex;
+    // Decided Soundex class should have public member function encode
+    auto encoded = soundex.encode("A");
+
+    ASSERT_THAT(encoded, Eq("A"));
 }
 
 
